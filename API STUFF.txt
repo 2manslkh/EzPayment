@@ -1,0 +1,20 @@
+2AUTH Request:
+https://api.ocbc.com/ocbcauthentication/api/oauth2/authorize?client_id=<consumer key>&redirect_uri=<callback URL>
+
+Consumer Key :
+hPH3p3NsQL4bdunQJECpbTP03K4a
+Consumer Secret :
+8q5LEpOXU2Be80vqe31dbBiSCbsa
+Access Token:
+fe3d673081491a4d76bbad9b64c5d6e0
+
+<< FOR TESTING >>
+Access Code: 0002263
+Pin: Any 6 numbers
+OTP: Any 6 numbers.
+
+https://api.ocbc.com/ocbcauthentication/api/oauth2/authorize?client_id=hPH3p3NsQL4bdunQJECpbTP03K4a&redirect_uri=https://api.ocbc.com:8243/transactional/payanyone/1.0
+
+The redirect uri is where the client will get send to after the account authorization is successful. You could also set up a redirect for an authorization failure. 
+
+Unh@ckabl3
