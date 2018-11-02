@@ -11,11 +11,11 @@ import java.util.List;
 
 public class APIhandler {
     String API_URL;
-    HashMap<String,String> parameters = new HashMap<>();
+    HashMap<String,Object> parameters = new HashMap<>();
     public String getResponseBody(String Token){
         try {
 
-            // TODO: Append url with additional queries where required
+            //Appends url with additional queries where required
             API_URL = getURLwithParams(API_URL);
             URL object = new URL(API_URL);
             HttpURLConnection con = (HttpURLConnection) object.openConnection();
@@ -52,6 +52,7 @@ public class APIhandler {
         }
     }
 
+    // Helper Function to append params to url
     public String getURLwithParams(String url){
         String out = "";
         out += url + "?";

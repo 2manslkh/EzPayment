@@ -1,8 +1,6 @@
 package com.example.kengh.ezpayment;
 
 public class Forex extends APIhandler{
-    private String country;
-    private String JSON_responseBody;
 
     Forex(){
         this("SG");
@@ -10,7 +8,7 @@ public class Forex extends APIhandler{
 
     Forex(String country){
         super.API_URL = "https://api.ocbc.com:8243/Forex/1.1";
-        this.country = country;
+        parameters.put("country",country);
     }
 
 }
